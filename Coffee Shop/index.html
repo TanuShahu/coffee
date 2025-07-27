@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://img.freepik.com/premium-vector/minimal-coffee-logo-coffee-logo-round-shape_611881-890.jpg?w=2000" alt="Coffee Logo" />
+        <span class="brand-name">Haven</span>
+      </div>
+      
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to Our Coffee Shop</h1>
+      <p>
+        Coffee is more than a drink—<br />
+        <strong>it’s energy, comfort, and conversation in a cup.</strong><br />
+        Whether <em>strong</em> or <em>sweet</em>, every sip is a small moment of joy. ☕✨
+      </p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <!-- Espresso Item -->
+      <div class="menu-item">
+        <img src="https://cafe1820.com/wp-content/uploads/2020/03/espresso-P3VSFDV-scaled.jpg" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>A strong, black coffee brewed by forcing steam through ground coffee beans.</p>
+        <p>Rs.200</p>
+      </div>
+      <!-- Cappuccino Item -->
+      <div class="menu-item">
+        <img src="https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2017/07/espresso-cappuccino-freddo-glass.jpg" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>A coffee drink consisting of espresso and steamed milk foam.</p>
+        <p>Rs.250</p>
+      </div>
+      <!-- Latte Item -->
+      <div class="menu-item">
+        <img src="https://img.freepik.com/premium-photo/latte-coffee_40429-352.jpg" alt="Latte" />
+        <h3>Latte</h3>
+        <p>A coffee drink made with espresso and steamed milk.</p>
+        <p>Rs.300</p>
+      </div>
+      <!-- Mocha Item -->
+      <div class="menu-item">
+        <img src="https://imhungryforthat.com/wp-content/uploads/2022/10/starbucks-cafe-mocha-recipe-720x1080.jpg" alt="Mocha" />
+        <h3>Mocha</h3>
+        <p>A delicious blend of espresso and chocolate, topped with steamed milk and whipped cream.</p>
+        <p>Rs.350</p>
+      </div>
+      <!-- Affogato Item -->
+      <div class="menu-item">
+        <img src="https://i.pinimg.com/originals/f7/6e/c2/f76ec2200e3927835c119cefe7c8081d.jpg" alt="Affogato" />
+        <h3>Affogato</h3>
+        <p>Vanilla gelato or ice cream "drowned" with a hot shot of espresso. Dessert meets coffee.</p>
+        <p>Rs.200</p>
+      </div>
+      <!-- Ristretto Item -->
+      <div class="menu-item">
+        <img src="https://i.pinimg.com/originals/b0/ab/7e/b0ab7e2e4ffbb16bff0cc44ddfa86dfb.jpg" alt="Ristretto" />
+        <h3>Ristretto</h3>
+        <p>A short shot of espresso made with finely ground beans and less water—bold and rich flavor.</p>
+        <p>Rs.250</p>
+      </div>
+      <!-- Americano Item -->
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vSoGsmZti3dfvVzMHUn-D0pQK-UvsQ1XAg&s" alt="Americano" />
+        <h3>Americano</h3>
+        <p>Espresso diluted with hot water, strong and satisfying.</p>
+        <p>Rs.300</p>
+      </div>
+      <!-- Iced Cold Brew item -->
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT74Nt6E2gp6N_e25anpz9PZNUW7ezk6F42dg&s" alt="Iced Cold Brew" />
+        <h3>Iced Cold Brew</h3>
+        <p>Smooth, low-acid coffee steeped for hours.</p>
+        <p>Rs.150</p>
+      </div>
+    </div>
+  </section>
+<!-- contact -->
+  <section id="contact">
+    <h2>Contact </h2>
+    <form id="orderForm" method="POST" action="submit.php">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="message">Order Details:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+    
+     <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" />
+    
+      <button type="submit">Send Order</button>
+    </form>
+    
+  </section>
+
+  <!-- Notification -->
+  <div id="notification" style="display:none;">✅ Your order has been sent!</div>
+
+  <section id="about">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>
+        At CoffeeShop, we believe coffee is more than a beverage — it's a culture, a passion, and a daily ritual.
+        Since our founding, we've been dedicated to crafting the perfect cup, sourcing premium beans from around the world,
+        and creating a cozy space where people can connect, relax, and recharge.
+      </p>
+      <p>
+        Whether you're grabbing a quick espresso or staying for a slow sip and conversation,
+        we welcome you to be a part of our coffee-loving community.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('orderForm');
+      const notification = document.getElementById('notification');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent actual form submission
+
+        form.reset(); // Optional: clear form after submission
+
+        notification.style.display = 'block'; // Show notification
+
+        // Hide notification after 3 seconds
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 3000);
+      });
+    });
+  </script>
+
+<!--visit us -->
+<div class="visit-us">
+  <h3>Visit Us!</h3>
+  <p><i class="fas fa-map-marker-alt"></i>123 Coffee Street,Chandrapur-442401</p>
+  <p><i class="fas fa-phone-alt"></i>+91 9087654321</p>
+  <p><i class="fas fa-envelope"></i>info@coffeeshop.com</p>
+
+  <div class="social-icons">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CoffeeShop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
